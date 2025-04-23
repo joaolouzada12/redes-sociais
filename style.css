@@ -11,22 +11,28 @@ body{
     background-position: center;
 }
 
-#tela{
+#telefone{
+    background: url(imagens/frame-iphone.png) no-repeat center center; 
+    background-size: contain; 
     display: block;
-    margin: 50px auto 0 auto;
-    width: 230px;
-    height: 480px;
-   
+    margin: 0 auto; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 230px; 
+    height: 440px; 
 }
 
+
 .container {
-    position: fixed; /* Fixa a posição no canto */
-    top: 40%; /* Centraliza verticalmente */
-    right: 20px; /* Define a distância da borda direita */
-    transform: translateY(-50%); /* Ajusta o alinhamento vertical */
+    position: fixed; 
+    top: 40%; 
+    right: 20px; 
+    transform: translateY(-50%); 
     display: flex;
-    flex-direction: column; /* Organiza as imagens em uma coluna */
-    gap: 10px; /* Espaço entre as imagens */
+    flex-direction: column; 
+    gap: 10px; 
 }
 
 .container img {
