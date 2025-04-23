@@ -64,3 +64,11 @@ body{
         height: 40px;
     }
 }
+
+iframe#tela{
+    position: relative;
+    top: 56px;
+    left: 21px;
+    width: 189px;
+    height: 333px;
+}
