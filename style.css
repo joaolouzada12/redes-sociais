@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: url(imagens/fundo-madeira.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#tela{
+    display: block;
+    margin: 50px auto 0 auto;
+    width: 230px;
+    height: 480px;
+   
+}
+
+.container {
+    position: fixed; /* Fixa a posição no canto */
+    top: 40%; /* Centraliza verticalmente */
+    right: 20px; /* Define a distância da borda direita */
+    transform: translateY(-50%); /* Ajusta o alinhamento vertical */
+    display: flex;
+    flex-direction: column; /* Organiza as imagens em uma coluna */
+    gap: 10px; /* Espaço entre as imagens */
+}
+
+.container img {
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+    cursor: pointer; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.3s ease; 
+}
+
+.container img:hover {
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.6);
+    transform: scale(1.1); 
+}
+@media screen and (max-width: 800px) {
+    #tela {
+        width: 180px;
+        height: 360px;
+    }
+
+    .container {
+        right: 10px;
+        gap: 5px;
+    }
+
+    .container img {
+        width: 40px;
+        height: 40px;
+    }
+}
