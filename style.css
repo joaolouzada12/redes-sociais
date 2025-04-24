@@ -45,7 +45,7 @@ body{
 }
 
 .container img:hover {
-    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.6);
+    box-shadow: 0 4px 10px rgba(157, 184, 2, 0.6);
     transform: scale(1.1); 
 }
 @media screen and (max-width: 800px) {
@@ -56,7 +56,7 @@ body{
 
     .container {
         right: 10px;
-        gap: 5px;
+        gap: 15px;
     }
 
     .container img {
